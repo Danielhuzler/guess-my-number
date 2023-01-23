@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div class="totalContainer">
+    <div class="heading"><h1>Guess My Number</h1>
+        <h2>Range Between 1 to 99</h2></div>
+    <div class="gameArea">
+        <button onclick="start()" id="startBtn" class="btn">start</button>
+        <div class="communicationBox" id="communicationBox">Welcome to Game !!</div>
+        <input type="number" class="numberInput" id="numberInput" placeholder="Enter your Guess between 1-99"/>
+        <button onclick="compareWithGuess()" class="btn guessBtn" id="guessBtn">Guess</button>
+    </div>
+    <div class="totalScoreContainer">
+    <div class="yourScoreContainer">
+        <div>Your Score left:</div>
+        <div id="yourScore">0</div>
+    </div>
+    <div class="highScoreContainer">
+        <div>High Score:</div>
+        <div id="highestScore">0</div>
+    </div>
+  </div>
+    <div class="instructionArea">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Enter your number between 1 to 99</li>
+            <li> check the number is high or low</li>
+            <li>Change your guess</li>
+            <li>Got 50 changes to give up!</li>
+        </ul>
+    </div>
+  </div>
+
+    <!-- script link -->
+    <script src="/script/script.js"></script>
+</body>
+</html>
