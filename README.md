@@ -1,2 +1,2 @@
-# guess-my-number
- to find out my number via guess
+# find my number
+try to find my number by hints 
